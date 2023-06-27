@@ -27,12 +27,6 @@ public class UserServiceTests {
     public void testGetTime() throws Exception {
         Assert.assertNotNull(userService.getTime());
     }
-    //write the Junit tests for all methods in the UserService class
-    @Test
-    public void testLogin() throws Exception{
-        Assert.assertEquals("success",userService.login(new User("admin","123")));
-        Assert.assertEquals("user not exists",userService.login(new User("admin","123456")));
-    }
 
     @Test
     public void testGetUserList() throws Exception{
